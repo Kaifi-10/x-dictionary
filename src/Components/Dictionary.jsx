@@ -42,7 +42,7 @@ const Dictionary = () => {
             <h1>Dictionary App</h1>
             <Search onSearch={handleSearch} />
             <h4>Definition:</h4>
-            {isDefinition && <p>{meaning}</p>}
+            <p>{meaning}</p>
         </div>
     );
 }
