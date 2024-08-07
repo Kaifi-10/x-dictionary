@@ -22,7 +22,7 @@ const Dictionary = () => {
         setIsDefinition(false);
 
         if (word === "") {
-            alert("Enter a word");
+            setMeaning("Word not found in the dictionary.");
             return;
         }
 
@@ -32,9 +32,10 @@ const Dictionary = () => {
             setMeaning(foundWord.meaning);
             setIsDefinition(true);
         } else {
-            setMeaning("Word not found in the dictionary");
+            setMeaning("Word not found in the dictionary.");
             setIsDefinition(true);
         }
+        // setMeaning( foundWord ? foundWord.meaning: "Word not found in the dictionary");
     };
 
     return (
